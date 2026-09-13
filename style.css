@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Droid+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #16001f;
+    color: #f2eafa;
+    font-family: 'Droid Serif', serif;
+    line-height: 1.7;
+}
+
+header {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(22, 0, 31, 0.65), rgba(22, 0, 31, 0.95)),
+        url('images/dio1.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 2px solid #7d32a8;
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 8px;
+    color: #d9a7ff;
+    text-shadow: 0 0 20px #7d32a8;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #cdb7d9;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid #49205c;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #c77dff;
+}
+
+p {
+    color: #d8c9df;
+}
+
+.imagem {
+    height: 350px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px dashed #8e44ad;
+    background: #21002e;
+}
+
+.imagem p {
+    color: #9b70aa;
+}
+
+.poderes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.poderes div {
+    padding: 30px;
+    background: #21002e;
+    border: 1px solid #6c2c82;
+    border-radius: 10px;
+}
+
+.poderes h3 {
+    color: #d9a7ff;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #0c0011;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+
+    .poderes {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+}
